@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Style pour le slider -->
+    <link rel="stylesheet" href="themes/default/default.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="nivo-slider.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="stylesheet1.css">
+
+    <title>Contactez Moschino</title>
+</head>
+
+<body>
+
+
+    <header id="bandeau" class="container">
+        <h1>
+            <a href="index.html">Moschino</a>
+        </h1>
+        <p class="petit">Collection été</p>
+
+        <nav id="menuprincipal">
+            <div id="burger">
+                <a href="#"><i class="fa-solid fa-bars"></a></i>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html" class="choix">Contact</a></li>
+            </ul>
+
+        </nav>
+    </header>
+    <main id="contenu" class="container">
+        <h2 class="titrepage">Contact</h2>
+
+        <!-- Integration map -->
+        <div id="map">
+
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d309.65308094337087!2d2.326347952520238!3d48.867211337154885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66f4692f8023f%3A0xb3e859d7b6f42f0f!2sMoschino!5e0!3m2!1sfr!2sfr!4v1667912944122!5m2!1sfr!2sfr"
+                width="" height="" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </div>
+
+        <!-- formulaire de contact -->
+        <div id="formulaire">
+
+            <div class="colonne">
+
+                <form action="contact.php" method="post">
+
+                    <p><label for="nom">Nom:</label><input type="text" name="nom" id="nom" placeholder="Votre nom"></p>
+                    <p><label for="email">Email:</label><input type="email" name="email" id="email"
+                            placeholder="pimpom@pimpom.com*"></p>
+                    <p><label for="message">Message:</label><textarea name="message" id="message"
+                            placeholder="Votre message:" rows="5"></textarea></p>
+
+                        <p><input type="submit" value="Envoyer" id=""></p>
+
+
+                </form>
+
+            </div>
+
+            <div class="colonne">
+
+                <form action="">
+
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+
+
+
+    <!-- Pied de PAGE -->
+    <footer id="pied">
+
+        <h3>
+            <a href="index.html">Moschino</a>
+        </h3>
+
+
+        <!-- Icones reseaux sociaux -->
+        <div class="sociales">
+            <ul>
+
+                <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-square-twitter"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+            </ul>
+        </div>
+
+
+
+        <p>&copy; Moschino - Copyright 2022</p>
+
+    </footer>
+
+    <!-- Script du slider -->
+    <script type="text/javascript" src="scripts/jquery-1.9.0.min.js"></script>
+    <script type="text/javascript" src="scripts/jquery.nivo.slider.js"></script>
+    <script type="text/javascript">
+        $(window).load(function () {
+            $('#slider').nivoSlider();
+        });
+
+        // script du menu déroulant
+        $('#menuprincipal #burger').click(function () {
+            $('#menuprincipal ul').slideToggle(1500)
+
+
+        });
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
